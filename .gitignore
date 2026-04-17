@@ -1,0 +1,9 @@
+# Workspace / Agent specific files
+.claude/
+.gemini/
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db

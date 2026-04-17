@@ -1,0 +1,36 @@
+/* content.css — styling for the injected download button */
+
+.igdm-dl-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease, background 0.15s ease;
+  backdrop-filter: blur(2px);
+}
+
+/* Reveal the button when hovering the media container. */
+.igdm-host:hover .igdm-dl-btn,
+.igdm-dl-btn:hover {
+  opacity: 1;
+}
+
+.igdm-dl-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.igdm-dl-btn:active {
+  transform: scale(0.92);
+}
